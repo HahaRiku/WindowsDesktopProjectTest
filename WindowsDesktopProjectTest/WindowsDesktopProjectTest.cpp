@@ -2,6 +2,8 @@
 //
 #include "WindowsDesktopProjectTest.h"
 
+#pragma comment(linker, "\"/manifestdependency:type='Win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
+
 const COMDLG_FILTERSPEC c_rgSaveTypes[] =
 {
 	{L"Word Document (*.doc)",       L"*.doc"},
@@ -12,11 +14,6 @@ const COMDLG_FILTERSPEC c_rgSaveTypes[] =
 
 #define MAX_LOADSTRING 100
 #define MAX_PATH 100
-
-// Indices of file types
-#define INDEX_WORDDOC 1
-#define INDEX_WEBPAGE 2
-#define INDEX_TEXTDOC 3
 
 // 全域變數:
 HINSTANCE hInst;                                // 目前執行個體

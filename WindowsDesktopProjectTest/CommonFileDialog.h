@@ -7,6 +7,11 @@
 #include <shlwapi.h>
 #include <new>
 
+// Indices of file types
+#define INDEX_WORDDOC 1
+#define INDEX_WEBPAGE 2
+#define INDEX_TEXTDOC 3
+
 class CommonFileDialog {
 public:
 	CommonFileDialog();
